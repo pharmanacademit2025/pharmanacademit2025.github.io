@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Pharman Academit — デジタル名刺</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            background: #050810;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 380px;
+            background: linear-gradient(145deg, #0f172a 0%, #1a2540 50%, #0f172a 100%);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow:
+                0 0 60px rgba(59, 130, 246, 0.08),
+                0 20px 60px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, #3b82f6, #06b6d4);
+        }
+
+        .card-inner {
+            padding: 40px 32px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 8px;
+        }
+
+        .logo-icon {
+            font-size: 2rem;
+        }
+
+        .brand-name {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #f1f5f9;
+            letter-spacing: -0.02em;
+        }
+
+        .tagline {
+            color: #06b6d4;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+            padding-left: 48px;
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            margin: 0 0 24px 0;
+        }
+
+        .motto {
+            text-align: center;
+            color: #94a3b8;
+            font-size: 0.85rem;
+            font-style: italic;
+            margin-bottom: 28px;
+            line-height: 1.6;
+        }
+
+        .qr-section {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 28px;
+        }
+
+        .qr-wrapper {
+            background: white;
+            padding: 12px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .qr-wrapper img {
+            display: block;
+            width: 160px;
+            height: 160px;
+        }
+
+        .qr-label {
+            text-align: center;
+            color: #64748b;
+            font-size: 0.7rem;
+            margin-top: 8px;
+            letter-spacing: 0.05em;
+        }
+
+        .contact-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            text-decoration: none;
+            color: #94a3b8;
+            font-size: 0.82rem;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover,
+        .contact-item:active {
+            background: rgba(59, 130, 246, 0.08);
+            border-color: rgba(59, 130, 246, 0.2);
+            color: #f1f5f9;
+        }
+
+        .contact-icon {
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .skills-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 24px;
+            justify-content: center;
+        }
+
+        .skill {
+            padding: 5px 12px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: #64748b;
+            font-size: 0.7rem;
+            font-weight: 500;
+        }
+
+        .footer-note {
+            text-align: center;
+            margin-top: 24px;
+            color: #334155;
+            font-size: 0.65rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-inner">
+            <div class="header">
+                <span class="logo-icon">💊</span>
+                <span class="brand-name">Pharman Academit</span>
+            </div>
+            <div class="tagline">薬剤師 × DX × 学術</div>
+
+            <div class="divider"></div>
+
+            <p class="motto">EBMとテクノロジーで薬局を変える</p>
+
+            <div class="qr-section">
+                <div class="qr-wrapper">
+                    <img src="qrcode.png" alt="QR Code - pharmanacademit2025.github.io">
+                    <p class="qr-label">SCAN TO VISIT</p>
+                </div>
+            </div>
+
+            <div class="contact-list">
+                <a href="mailto:pharman.academit@gmail.com" class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    pharman.academit@gmail.com
+                </a>
+                <a href="https://pharmanacademit2025.github.io/" class="contact-item" target="_blank">
+                    <span class="contact-icon">🌐</span>
+                    pharmanacademit2025.github.io
+                </a>
+                <a href="https://note.com/pharman_academit" class="contact-item" target="_blank">
+                    <span class="contact-icon">📝</span>
+                    Note — EBM医療情報記事
+                </a>
+                <a href="http://www.youtube.com/@PharmanAcademit" class="contact-item" target="_blank">
+                    <span class="contact-icon">🎬</span>
+                    YouTube — 医療情報動画
+                </a>
+            </div>
+
+            <div class="skills-row">
+                <span class="skill">💊 薬剤師</span>
+                <span class="skill">💻 エンジニア</span>
+                <span class="skill">📊 EBM</span>
+                <span class="skill">💬 NBM</span>
+                <span class="skill">🤖 AI</span>
+            </div>
+
+            <p class="footer-note">© 2026 Pharman Academit</p>
+        </div>
+    </div>
+</body>
+
+</html>
