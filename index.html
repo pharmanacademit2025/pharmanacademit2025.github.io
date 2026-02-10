@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharman Academit — 薬剤師 × DX × 学術</title>
+    <meta name="description" content="EBMとテクノロジーで薬局を変える。薬剤師×エンジニアによるDXソリューション・EBMコンテンツ・AI服薬指導支援。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-icon">💊</span>
+                <span class="logo-text">Pharman Academit</span>
+            </a>
+            <div class="nav-links">
+                <a href="#services">サービス</a>
+                <a href="#about">プロフィール</a>
+                <a href="#contact" class="nav-cta">お問い合わせ</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="メニュー">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#services">サービス</a>
+        <a href="#about">プロフィール</a>
+        <a href="#contact">お問い合わせ</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-particles" id="particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">薬剤師 × DX × 学術</div>
+            <h1 class="hero-title">
+                <span class="title-line">EBMとテクノロジーで</span>
+                <span class="title-line title-accent">薬局を変える。</span>
+            </h1>
+            <p class="hero-subtitle">
+                エビデンスに基づく医療情報と、最新のデジタル技術を融合。<br>
+                薬局DXの導入から、EBMコンテンツの提供、AI活用まで<br>
+                ワンストップで支援します。
+            </p>
+            <div class="hero-actions">
+                <a href="#services" class="btn btn-primary">
+                    サービスを見る
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" />
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">お問い合わせ</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="100">0</span><span class="stat-suffix">本+</span>
+                    <span class="stat-label">EBM記事公開中</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="3">0</span><span class="stat-suffix">件</span>
+                    <span class="stat-label">学会発表実績</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="1">0</span><span class="stat-suffix">本</span>
+                    <span class="stat-label">プレプリント論文公開</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Services</span>
+                <h2 class="section-title">提供サービス</h2>
+                <p class="section-desc">薬剤師として・エンジニアとして・研究者として。<br>3つの専門性を活かしたサービスを提供します。</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1: DX System -->
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                            <path d="M8 21h8M12 17v4" />
+                        </svg>
+                    </div>
+                    <div class="service-tag">DX</div>
+                    <h3>薬局DX処方箋受信システム</h3>
+                    <p>LINE公式アカウントから送信された処方箋画像を自動受信・自動印刷。患者の待ち時間を削減し、薬局業務を効率化します。</p>
+                    <ul class="service-features">
+                        <li>LINE連携で患者負担ゼロ</li>
+                        <li>受信から印刷まで完全自動</li>
+                        <li>クラウド経由のセキュアな接続</li>
+                        <li>導入・設定すべてサポート</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2: EBM Content -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" />
+                        </svg>
+                    </div>
+                    <div class="service-tag">学術 / EBM</div>
+                    <h3>EBM記事コンテンツ提供</h3>
+                    <p>Noteで公開しているエビデンスベースの薬学情報記事を、御社のウェブサイトに掲載。専門性と信頼性を高めるコンテンツとして活用いただけます。</p>
+                    <ul class="service-features">
+                        <li>PMID・DOI付きのエビデンス引用</li>
+                        <li>NNT/NNHなど臨床指標を明示</li>
+                        <li>EBM × NBMの患者視点の解説</li>
+                        <li>定期的な記事URL提供</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3: PharmaDI AI -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3M12 17h.01" />
+                        </svg>
+                    </div>
+                    <div class="service-tag">AI</div>
+                    <h3>PharmaDI — AI服薬指導支援</h3>
+                    <p>薬剤名を入力するだけで、エビデンスレベルⅠの臨床試験データ・患者説明文・SOAP薬歴を自動生成するAIツール。</p>
+                    <ul class="service-features">
+                        <li>メタアナリシス優先の自動検索</li>
+                        <li>NNT/NNH・95%CIを自動計算</li>
+                        <li>患者に伝わる言葉で副作用説明</li>
+                        <li>SOAP形式でコピペ可能な薬歴</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual">
+                    <div class="about-avatar">
+                        <div class="avatar-icon">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1">
+                                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="about-skills">
+                        <div class="skill-tag">💊 薬剤師</div>
+                        <div class="skill-tag">💻 エンジニア</div>
+                        <div class="skill-tag">📊 EBM</div>
+                        <div class="skill-tag">💬 NBM</div>
+                        <div class="skill-tag">🤖 AI活用</div>
+                        <div class="skill-tag">🎨 デザイン</div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-tag">About</span>
+                    <h2 class="section-title">プロフィール</h2>
+                    <div class="about-text">
+                        <p>
+                            <strong>Pharman Academit</strong> — 薬剤師としての臨床経験と、エンジニアとしての技術力、EBM（Evidence-Based
+                            Medicine）およびNBM（Narrative-Based Medicine）への深い専門性を併せ持ち、薬局DXと学術活動の両面から薬剤師業務の進化を支援しています。
+                        </p>
+                        <p>
+                            「薬剤師が本当に必要としている」DXツールを、薬剤師自身が設計・開発。添付文書の先にある臨床エビデンスを、すべての薬剤師が活用できる形に変換します。
+                        </p>
+                    </div>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <div class="highlight-icon">🏆</div>
+                            <div>
+                                <strong>学会発表・受賞歴</strong>
+                                <p>2012年 日本薬学会年会 学生優秀発表賞受賞<br>2022年 日本薬剤師学会 ポスター発表<br>FAPA 2023（アジア薬学連合会議）発表</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight-icon">📄</div>
+                            <div>
+                                <strong>論文・研究活動</strong>
+                                <p>プレプリント論文公開済み（DOI取得）<br>NDB（レセプトデータ）分析研究 進行中</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight-icon">💻</div>
+                            <div>
+                                <strong>DX開発実績</strong>
+                                <p>LINE連携処方箋自動印刷システム開発・導入<br>AI服薬指導支援ツール（PharmaDI）設計</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SNS & Content Section -->
+    <section class="content-section" id="content">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Content</span>
+                <h2 class="section-title">コンテンツ発信</h2>
+                <p class="section-desc">EBMに基づく薬学情報を、複数のプラットフォームで発信しています。</p>
+            </div>
+            <div class="content-grid content-grid-2">
+                <a href="https://note.com/pharman_academit" class="content-card" target="_blank" rel="noopener">
+                    <div class="content-card-icon">📝</div>
+                    <h3>Note</h3>
+                    <p>EBMに基づく医療情報を、薬剤師の視点でわかりやすく執筆</p>
+                    <span class="content-card-link">記事を読む →</span>
+                </a>
+                <a href="http://www.youtube.com/@PharmanAcademit" class="content-card" target="_blank" rel="noopener">
+                    <div class="content-card-icon">🎬</div>
+                    <h3>YouTube</h3>
+                    <p>Note記事をベースにした医療情報の動画解説</p>
+                    <span class="content-card-link">チャンネルを見る →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-tag">Contact</span>
+                    <h2 class="section-title">お問い合わせ</h2>
+                    <p>サービスに関するご質問、導入のご相談、<br>コンテンツのお問い合わせなど、お気軽にご連絡ください。</p>
+                    <div class="contact-methods">
+                        <a href="mailto:pharman.academit@gmail.com" class="contact-method">
+                            <div class="contact-method-icon">📧</div>
+                            <div>
+                                <strong>メール</strong>
+                                <p>pharman.academit@gmail.com</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="biz-card">
+                        <div class="biz-card-header">
+                            <span class="biz-card-logo">💊</span>
+                            <div>
+                                <h3>Pharman Academit</h3>
+                                <p>薬剤師 × DX × 学術</p>
+                            </div>
+                        </div>
+                        <div class="biz-card-divider"></div>
+                        <div class="biz-card-body">
+                            <p>EBMとテクノロジーで薬局を変える</p>
+                        </div>
+                        <div class="biz-card-qr" id="qrPlaceholder">
+                            <div class="qr-placeholder">
+                                <p>[ QR Code ]</p>
+                                <p class="qr-note">サイトURL</p>
+                            </div>
+                        </div>
+                        <div class="biz-card-footer">
+                            <span>📧 pharman.academit@gmail.com</span>
+                            <span>🌐 pharmanacademit2025.github.io</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">💊</span>
+                    <span class="logo-text">Pharman Academit</span>
+                </div>
+                <p class="footer-copy">© 2026 Pharman Academit. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
