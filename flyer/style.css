@@ -1,0 +1,362 @@
+/* ==========================================
+   Pharman Academit — Referral Flyer CSS
+   ========================================== */
+
+:root {
+    --primary: #0f172a;
+    /* Dark Slate */
+    --accent: #06b6d4;
+    /* Cyan */
+    --highlight: #f59e0b;
+    /* Amber/Gold for money */
+    --text: #334155;
+    /* Slate 700 */
+    --bg-light: #f8fafc;
+    /* Slate 50 */
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Noto Sans JP', sans-serif;
+    background: #e2e8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: var(--text);
+}
+
+.flyer-container {
+    background: var(--white);
+    width: 100%;
+    max-width: 600px;
+    /* Optimal width for sharing/print */
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+/* === Header === */
+.header {
+    background: var(--primary);
+    color: var(--white);
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.brand-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: -0.02em;
+}
+
+.campaign-badge {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* === Hero Section === */
+.hero {
+    padding: 40px 24px 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, var(--primary) 0%, var(--primary) 80%, var(--white) 80%);
+}
+
+.hero-title {
+    color: var(--white);
+    font-feature-settings: "palt";
+    line-height: 1.4;
+    margin-bottom: 16px;
+}
+
+.hero-sub {
+    font-size: 1.2rem;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.hero-main {
+    font-size: 2rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #fff 0%, #bae6fd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block;
+    margin-top: 4px;
+}
+
+.hero-desc {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+/* === Incentive Box === */
+.incentive {
+    background: var(--white);
+    margin: 0 24px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    border: 2px solid var(--highlight);
+    position: relative;
+    top: -20px;
+    /* Pull up into hero */
+}
+
+.incentive-label {
+    background: var(--highlight);
+    color: var(--white);
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 10px rgba(245, 158, 11, 0.4);
+}
+
+.incentive-amount {
+    color: var(--primary);
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 10px 0;
+}
+
+.currency {
+    font-size: 1.8rem;
+    margin-right: 4px;
+}
+
+.amount {
+    font-size: 3.5rem;
+    line-height: 1;
+    letter-spacing: -0.03em;
+}
+
+.condition {
+    font-size: 1.2rem;
+    color: #64748b;
+    margin-left: 8px;
+    font-weight: 600;
+}
+
+.incentive-note {
+    font-size: 0.75rem;
+    color: #94a3b8;
+}
+
+/* === Product Info === */
+.product {
+    padding: 10px 32px 30px;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    color: var(--primary);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 8px;
+}
+
+.product-card {
+    background: #f1f5f9;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.product-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 4px;
+}
+
+.product-tagline {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.features li {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.features li .check {
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+.features li div {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--text);
+}
+
+/* === Pricing === */
+.pricing {
+    padding: 0 32px 30px;
+    text-align: center;
+}
+
+.price-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background: var(--primary);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.price-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-item .label {
+    font-size: 0.75rem;
+    opacity: 0.8;
+    margin-bottom: 4px;
+}
+
+.price-item .value {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.price-item .unit {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-left: 2px;
+}
+
+.pricing .plus {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.pricing-note {
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+/* === Footer === */
+.footer {
+    background: #f8fafc;
+    padding: 30px 24px;
+    text-align: center;
+    border-top: 1px solid #e2e8f0;
+}
+
+.cta-text {
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.contact-box {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    background: var(--white);
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.contact-method .icon {
+    font-size: 1.2rem;
+}
+
+.copyright {
+    font-size: 0.7rem;
+    color: #94a3b8;
+}
+
+@media (max-width: 480px) {
+    .flyer-container {
+        border-radius: 0;
+        box-shadow: none;
+        max-width: 100%;
+    }
+
+    body {
+        padding: 0;
+        background: var(--white);
+    }
+
+    .price-row {
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px;
+    }
+
+    .pricing .plus {
+        display: none;
+    }
+}
